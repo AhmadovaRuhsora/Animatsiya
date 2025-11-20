@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animatsiya</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.mainbox{
+			width: 900px;
+			height: 730px;
+			margin: auto;
+		}
+		.out, .in {
+			display: flex;
+			position: relative;
+		}
+		.out .top{
+			width: 200px;
+			height: 200px;
+			border: 2px solid black;
+			margin: 10px;
+			overflow: hidden;  
+			position: relative; 
+		}
+		.out .top img{
+			opacity: 1;
+		}
+		.out .top:hover img{
+			opacity: 0;
+			top: -200px;
+		}
+		.out .bottom{
+			width: 200px;
+			height: 200px;
+			border: 2px solid black;
+			margin: 10px;
+			overflow: hidden;   
+			position: relative; 
+		}
+		.out .bottom img{
+			opacity: 1;
+		}
+		.out .bottom:hover img{
+			opacity: 0;
+			top: 200px;
+		}
+		.out .left{
+			width: 200px;
+			height: 200px;
+			border: 2px solid black;
+			margin: 10px;
+			overflow: hidden;   
+			position: relative; 
+		}
+		.out .left img{
+			opacity: 1;
+		}
+		.out .left:hover img{
+			opacity: 0;
+			left: -200px; 
+		}
+		.out .right{
+			width: 200px;
+			height: 200px;
+			border: 2px solid black;
+			margin: 10px;
+			overflow: hidden;   
+			position: relative; 
+		}
+		.out .right img{
+			opacity: 1;
+		}
+		.out .right:hover img{
+			opacity: 0;
+			left: 200px;
+		}
+		.in .top{
+			width: 200px;
+			height: 200px;
+			border: 2px solid black;
+			margin: 10px;
+			overflow: hidden;   
+			position: relative; 
+		}
+		.in .top img{
+			opacity: 0;
+			top: -200px;
+		}
+		.in .top:hover img{
+			opacity: 1;
+			top: 0;
+		}
+		.in .bottom{
+			width: 200px;
+			height: 200px;
+			border: 2px solid black;
+			margin: 10px;
+			overflow: hidden;   
+			position: relative; 
+		}
+		.in .bottom img{
+			opacity: 0;
+			top: 200px;
+		}
+		.in .bottom:hover img{
+			opacity: 1;
+			top: 0;
+		}
+		.in .left{
+			width: 200px;
+			height: 200px;
+			border: 2px solid black;
+			margin: 10px;
+			overflow: hidden;   
+			position: relative; 
+		}
+		.in .left img{
+			opacity: 0;
+			left: -200px;
+		}
+		.in .left:hover img{
+			opacity: 1;
+			left: 0;
+		}
+		.in .right{
+			width: 200px;
+			height: 200px;
+			border: 2px solid black;
+			margin: 10px;
+			overflow: hidden;   
+			position: relative; 
+		}
+		.in .right img{
+			opacity: 0;
+			left: 200px;
+		}
+		.in .right:hover img{
+			opacity: 1;
+			left: 0;
+		}
+		.mainbox img {
+		    width: 100%;
+		    height: 100%;
+		    object-fit: cover;
+		    display: block;
+		    transition: all 0.4s;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="mainbox">
+		<div class="out">
+			<div class="top"><img src="uk.jpg" width="200"></div>
+			<div class="bottom"><img src="turkiya.jpg" width="200"></div>
+			<div class="left"><img src="madina.jpg" width="200"></div>
+			<div class="right"><img src="kanada.jpg" width="200"></div>
+		</div>
+		<div class="in">
+			<div class="top"><img src="efil.jpg" width="200"></div>
+			<div class="bottom"><img src="city.jpg" width="200"></div>
+			<div class="left"><img src="aqsh.jpg" width="200"></div>
+			<div class="right"><img src="misr.jpg" width="200"></div>
+		</div>
+	</div>
+</body>
+</html>
